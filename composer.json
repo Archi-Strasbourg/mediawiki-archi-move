@@ -1,0 +1,8 @@
+{
+  "name": "archi-strasbourg/archi-move",
+  "description": "Implement ArchiWiki's page renaming workflow",
+  "license": "GPL-3.0",
+  "require-dev": {
+    "squizlabs/php_codesniffer": "~3.1.0"
+  }
+}

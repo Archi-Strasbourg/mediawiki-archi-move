@@ -1,0 +1,20 @@
+{
+  "name": "archi-move",
+  "description": "Implement ArchiWiki's page renaming workflow",
+  "version": "1.0.0",
+  "author": "Pierre Rudloff",
+  "bugs": "https://github.com/Archi-Strasbourg/mediawiki-archi-move/issues",
+  "devDependencies": {
+    "fixpack": "~2.3.1",
+    "jsonlint": "~1.6.2"
+  },
+  "homepage": "https://github.com/Archi-Strasbourg/mediawiki-archi-move",
+  "keywords": [
+    "MediaWiki",
+    "move",
+    "rename"
+  ],
+  "license": "GPL-3.0",
+  "main": "ArchiMove.php",
+  "repository": "https://github.com/Archi-Strasbourg/mediawiki-archi-move.git"
+}

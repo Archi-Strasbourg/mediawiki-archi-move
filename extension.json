@@ -1,0 +1,17 @@
+{
+  "manifest_version": 1,
+  "name": "ArchiMove",
+  "version": "1.0.0",
+  "author": "Pierre Rudloff",
+  "url": "https://github.com/Archi-Strasbourg/mediawiki-archi-move",
+  "license-name": "GPL-3.0",
+  "description": "Implement ArchiWiki's page renaming workflow",
+  "Hooks": {
+    "TitleMove": [
+      "ArchiMove\\ArchiMove::onTitleMove"
+    ]
+  },
+  "AutoloadClasses": {
+    "ArchiMove\\ArchiMove": "ArchiMove.php"
+  }
+}
