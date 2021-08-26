@@ -7,11 +7,16 @@ use Title;
 
 class ArchiMove
 {
-    public static function onTitleMove($oldTitle, $newTitle)
-    {
-        if ($oldTitle->getNamespace() == NS_ADDRESS && $newTitle->getNamespace() == NS_ADDRESS) {
-            global $wgUser;
 
+    /**
+     * @param Title $oldTitle
+     * @param Title $newTitle
+     */
+    public static function onTitleMove(Title $oldTitle, Title $newTitle)
+    {
+        global $wgUser;
+
+        if ($oldTitle->getNamespace() == NS_ADDRESS && $newTitle->getNamespace() == NS_ADDRESS) {
             $movePage = new MovePage(
                 Title::newFromText($oldTitle->getText(), NS_ADDRESS_NEWS),
                 Title::newFromText($newTitle->getText(), NS_ADDRESS_NEWS)
